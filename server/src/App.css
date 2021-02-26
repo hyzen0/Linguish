@@ -1,0 +1,240 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:600,400");
+* {
+  box-sizing: border-box;
+}
+.border-1-5px-black {
+  border: 1.5px solid var(--black);
+}
+.border-class-1 {
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+.main {
+  background-color: white;
+  background-size: 100% 100%;
+  height: 900px;
+  overflow: hidden;
+  position: relative;
+  width: 1440px;
+}
+.main .app-store {
+  align-self: center;
+  letter-spacing: 0px;
+  margin-bottom: -10px;
+  margin-left: 6px;
+  min-height: 27px;
+  min-width: 90px;
+  text-align: center;
+}
+.main .auto-flex {
+  align-items: flex-start;
+  display: flex;
+  margin-top: 20px;
+  min-width: 483px;
+}
+.main .butto-down--app-store {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 19px;
+  min-width: 232px;
+}
+.main .butto-down-oad-google {
+  align-items: flex-start;
+  display: flex;
+  min-width: 232px;
+}
+.main .button-main {
+  align-items: center;
+  background-color: var(--inchworm);
+  border-radius: 37.5px;
+  box-shadow: 3px 5px 24px rgba(69, 103, 26, 0.65);
+  display: flex;
+  height: 64px;
+  left: 0px;
+  min-width: 318px;
+  padding: 0 79px;
+  position: absolute;
+  top: 76px;
+}
+.main .description {
+  left: 0px;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 0px;
+  width: 408px;
+}
+.main .download-app {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 0px;
+  min-height: 111px;
+  position: absolute;
+  top: 719px;
+  width: 483px;
+}
+.main .ellipse-1 {
+  height: 1134px;
+  left: 229px;
+  position: absolute;
+  top: 0px;
+  width: 1134px;
+}
+.main .get-it-on {
+  letter-spacing: 0px;
+  margin-left: 1px;
+  min-height: 30px;
+  min-width: 86px;
+  text-align: center;
+}
+.main .google-play {
+  letter-spacing: 0px;
+  margin-left: 7px;
+  min-height: 27px;
+  min-width: 109px;
+  margin-top: 5px;
+  text-align: center;
+}
+.main .google-play-1 {
+  height: 28px;
+  object-fit: cover;
+  width: 28px;
+}
+.main .image {
+  align-items: flex-end;
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  height: 566px;
+  left: 598px;
+  min-width: 494px;
+  padding: 40.9px 2.1px;
+  position: absolute;
+  top: 283px;
+}
+.main .lets-get-started {
+  height: 16px;
+  width: 160px;
+}
+.main .lingush {
+  letter-spacing: 0px;
+  min-height: 90px;
+}
+.main .logo {
+  align-items: flex-start;
+  display: flex;
+  height: 60px;
+  left: 237px;
+  min-width: 194px;
+  position: absolute;
+  top: 65px;
+}
+.main .mask-group {
+  height: 700px;
+  left: 461px;
+  position: absolute;
+  top: 206px;
+  width: 700px;
+}
+.main .offer-construction {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 0px;
+  min-height: 230px;
+  position: absolute;
+  top: 312px;
+  width: 410px;
+}
+.main .overlap-group {
+  height: 1134px;
+  left: 237px;
+  position: absolute;
+  top: 29px;
+  width: 1363px;
+}
+.main .overlap-group1 {
+  height: 140px;
+  position: relative;
+  width: 408px;
+}
+.main .overlap-group1-1 {
+  align-items: flex-start;
+  background-color: var(--alabaster);
+  border-radius: 32px;
+  box-shadow: 5px 4px 13px rgba(0, 0, 0, 0.25);
+  display: flex;
+  height: 61px;
+  min-width: 230px;
+  padding: 15.5px 42.5px;
+}
+.main .overlap-group2 {
+  align-items: flex-start;
+  background-color: var(--alabaster);
+  border-radius: 32px;
+  box-shadow: 5px 4px 13px rgba(0, 0, 0, 0.25);
+  display: flex;
+  height: 61px;
+  min-width: 230px;
+  padding: 15.5px 52.5px;
+}
+.main .text-1 {
+  align-self: center;
+  letter-spacing: 0px;
+  margin-left: 21px;
+  margin-top: 0.34px;
+  min-height: 36px;
+  width: 99px;
+}
+.main .vector {
+  height: 62px;
+  margin-left: -1px;
+  margin-top: -1px;
+  width: 74px;
+}
+.main .x6486925preview-1 {
+  height: 215px;
+  object-fit: cover;
+  width: 301px;
+}
+.poppins-normal-baby-powder-20px {
+  color: var(--baby-powder);
+  font-family: "Poppins", Helvetica, Arial, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+.poppins-normal-black-18px {
+  color: black;
+  font-family: "Poppins", Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+.poppins-normal-white-20px {
+  color: white;
+  font-family: "Poppins", Helvetica, Arial, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+.poppins-normal-white-24px {
+  color: white;
+  font-family: "Poppins", Helvetica, Arial, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+.poppins-normal-white-60px {
+  color: white;
+  font-family: "Poppins", Helvetica, Arial, serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+}
+:root {
+  --alabaster: rgba(250, 250, 250, 1);
+  --baby-powder: rgba(252, 252, 252, 1);
+  --black: rgba(0, 0, 0, 0.6);
+  --inchworm: rgba(181, 255, 87, 1);
+}
