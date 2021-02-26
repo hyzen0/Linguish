@@ -57,11 +57,14 @@
 }
 .why-lingush {
   align-items: normal;
-  background-size: 100% 100%;
+  /* background-size: 100% 100%; */
   display: flex;
   height: 900px;
   padding: 0 233px;
-  width: 1440px;
+  width: 1519px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .why-lingush .app-store {
   align-self: center;
@@ -79,6 +82,7 @@
   margin-top: 65px;
   min-height: 559px;
   width: 241px;
+  margin-left: 50px;
 }
 .why-lingush .auto-flex1 {
   align-items: center;
