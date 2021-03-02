@@ -3,20 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import letsGetStarted1 from './Screens/LetsGetStarted/letsGetStarted1';
 
 ReactDOM.render(
-  // <React.StrictMode>
-  //   <App />
-  // </React.StrictMode>,
-  // document.getElementById('root')
-  <BrowserRouter>
-       <Switch>
-        <Route exact path="/" component={App} />
-        <Route path="/Lets_get_started1" component={letsGetStarted1} />
-      </Switch>
-  </BrowserRouter>,
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
   document.getElementById('root')
 );
 

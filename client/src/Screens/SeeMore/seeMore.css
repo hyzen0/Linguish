@@ -1,0 +1,218 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400");
+* {
+  box-sizing: border-box;
+}
+.poppins-normal-white-15px {
+  color: white;
+  font-family: "Poppins", Helvetica, Arial, serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+}
+.poppins-normal-white-20px {
+  color: white;
+  font-family: "Poppins", Helvetica, Arial, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+.poppins-normal-white-24px {
+  color: white;
+  font-family: "Poppins", Helvetica, Arial, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+.see-more-details-screen {
+  align-items: flex-start;
+  background-color: white;
+  display: flex;
+  width: 1440px;
+}
+.see-more-details-screen .ar-iconsinteractive-1 {
+  height: 265px;
+  margin-right: 2.08px;
+  margin-top: 15px;
+  object-fit: cover;
+  width: 134px;
+}
+.see-more-details-screen .auto-flex {
+  align-items: center;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-left: 63px;
+  min-height: 656px;
+  width: 812px;
+}
+.see-more-details-screen .ellipse- {
+  height: 10px;
+  margin-left: 5px;
+  width: 10px;
+}
+.see-more-details-screen .ellipse-2 {
+  height: 543px;
+  left: 133px;
+  position: absolute;
+  top: 55px;
+  width: 542px;
+}
+.see-more-details-screen .ellipse-9 {
+  height: 10px;
+  width: 10px;
+}
+.see-more-details-screen .frame-1 {
+  align-items: center;
+  display: flex;
+  height: 552px;
+  left: 0px;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  width: 812px;
+}
+.see-more-details-screen .group-1 {
+  align-items: center;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-left: 59px;
+  min-height: 551px;
+  width: 243px;
+}
+.see-more-details-screen .group-6 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+  margin-top: 0.53px;
+  min-height: 312px;
+  width: 228px;
+}
+.see-more-details-screen .group-7 {
+  margin-left: 59px;
+}
+.see-more-details-screen .group-8 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15.1px;
+  margin-left: -292px;
+  min-height: 327px;
+  width: 228px;
+}
+.see-more-details-screen .group-8-1 {
+  align-items: flex-start;
+  display: flex;
+  margin-right: 3px;
+  margin-top: 48px;
+  min-width: 85px;
+}
+.see-more-details-screen .group-9 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.1px;
+  margin-left: 60px;
+  min-height: 312px;
+  width: 228px;
+}
+.see-more-details-screen .logo {
+  align-items: flex-start;
+  display: flex;
+  height: 60px;
+  left: 265px;
+  min-width: 194px;
+  position: absolute;
+  top: 65px;
+}
+.see-more-details-screen .overlap-group {
+  height: 900px;
+  position: relative;
+  width: 1440px;
+}
+.see-more-details-screen .overlap-group1 {
+  height: 598px;
+  position: relative;
+  width: 812px;
+}
+.see-more-details-screen .plans-icon-1 {
+  height: 265px;
+  margin-right: 2px;
+  margin-top: 27px;
+  object-fit: cover;
+  width: 134px;
+}
+.see-more-details-screen .quiz {
+  letter-spacing: 0px;
+  margin-left: 0px;
+  min-height: 26px;
+  text-align: center;
+  width: 228px;
+}
+.see-more-details-screen .text- {
+  letter-spacing: 0px;
+  min-height: 19px;
+  text-align: center;
+  width: 228px;
+}
+.see-more-details-screen .text-4 {
+  letter-spacing: 0px;
+  min-height: 47px;
+  text-align: center;
+  width: 228px;
+}
+.see-more-details-screen .text-5 {
+  align-self: center;
+  letter-spacing: 0px;
+  margin-left: 21px;
+  margin-top: 0.34px;
+  min-height: 36px;
+  width: 99px;
+}
+.see-more-details-screen .third-page {
+  align-items: center;
+  background-size: 100% 100%;
+  display: flex;
+  height: 900px;
+  left: 0px;
+  padding: 70px 235px;
+  position: absolute;
+  top: 0px;
+  width: 1519px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.see-more-details-screen .vector {
+  height: 62px;
+  margin-left: -1px;
+  margin-top: -1px;
+  width: 74px;
+}
+.see-more-details-screen .vector-1 {
+  height: 62px;
+  margin-left: 60px;
+  width: 17px;
+}
+.see-more-details-screen .vector-2 {
+  height: 62px;
+  margin-top: 0px;
+  width: 17px;
+  margin-left: 30px;
+}
+.see-more-details-screen .x-icon {
+  height: 266px;
+  margin-right: 2px;
+  margin-top: 27px;
+  object-fit: cover;
+  width: 134px;
+}
+.see-more-details-screen .x81364-art-paren-ad-free-image-1 {
+  height: 460px;
+  margin-right: 2px;
+  margin-top: 53px;
+  object-fit: cover;
+  width: 242px;
+}

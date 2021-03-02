@@ -1,5 +1,7 @@
 import React from "react";
 import './letsGetStarted1.css';
+import {Link } from "react-router-dom";
+// import seeMore from './../SeeMore/seeMore';
 
 function letsGetStarted1() {
   return <WhyLingush {...whyLingushData} />;
@@ -56,10 +58,14 @@ function WhyLingush(props) {
             <div className="text-3 poppins-normal-white-18px">{text3}</div>
           </div>
         </div>
-        <div className="detail">
+        {/* <div className="detail"> */}
+          {/* <div className="see-more poppins-normal-fair-pink-15px">{seeMore}</div> */}
+          <Link to="/see_more"><div className="detail">
           <div className="see-more poppins-normal-fair-pink-15px">{seeMore}</div>
           <img className="line-5" src={line5} />
-        </div>
+            </div>
+            </Link>
+        {/* </div> */}
         <div className="download-app">
           <div className="get-it-on poppins-normal-baby-powder-20px">{getItOn}</div>
           <div className="auto-flex2">
