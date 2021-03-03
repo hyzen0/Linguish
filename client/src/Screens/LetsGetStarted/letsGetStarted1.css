@@ -1,7 +1,8 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,600");
+@import url("https://fonts.googleapis.com/css?family=Poppins:600,400,700,500");
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
 .border-1-5px-black {
   border: 1.5px solid var(--black);
@@ -48,6 +49,13 @@
   font-style: normal;
   font-weight: 400;
 }
+.poppins-semi-bold-alabaster-18px {
+  color: var(--alabaster-2);
+  font-family: "Poppins", Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}
 .poppins-semi-bold-white-30px {
   color: white;
   font-family: "Poppins", Helvetica, Arial, serif;
@@ -56,11 +64,12 @@
   font-weight: 600;
 }
 .why-lingush {
-  align-items: normal;
-  /* background-size: 100% 100%; */
+  align-items: center;
+  background-size: 100% 100%;
   display: flex;
-  height: 900px;
-  padding: 0 224px;
+  flex-direction: column;
+  height: 920px;
+  padding: 65px 190px;
   width: 1519px;
   background-position: center;
   background-repeat: no-repeat;
@@ -78,34 +87,23 @@
 .why-lingush .auto-flex {
   align-items: flex-start;
   display: flex;
-  flex-direction: column;
-  margin-top: 65px;
-  min-height: 559px;
-  width: 241px;
-  margin-left: 50px;
+  margin-left: 125px;
+  margin-top: 30px;
+  min-width: 972px;
 }
 .why-lingush .auto-flex1 {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  margin-left: 3px;
-  margin-top: 175px;
-  min-height: 655px;
-  width: 483px;
-}
-.why-lingush .auto-flex2 {
   align-items: flex-start;
   display: flex;
   margin-top: 20px;
   min-width: 483px;
 }
-.why-lingush .butto-down--app-store {
+.why-lingush .butto-download-app-store {
   align-items: flex-start;
   display: flex;
   margin-left: 19px;
   min-width: 232px;
 }
-.why-lingush .butto-down-oad-google {
+.why-lingush .butto-download-google {
   align-items: flex-start;
   display: flex;
   min-width: 232px;
@@ -114,7 +112,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin-left: 1px;
+  margin-left: 2px;
   margin-top: 30px;
   min-height: 27px;
   width: 74px;
@@ -123,6 +121,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  margin-left: 1px;
   margin-top: 38px;
   min-height: 111px;
   width: 483px;
@@ -151,10 +150,10 @@
 .why-lingush .google-play {
   letter-spacing: 0px;
   margin-left: 7px;
-  margin-top: 5px;
   min-height: 27px;
   min-width: 109px;
   text-align: center;
+  margin-top: 5px;
 }
 .why-lingush .google-play-1 {
   height: 28px;
@@ -166,24 +165,61 @@
   display: flex;
   height: 374px;
   justify-content: flex-end;
-  margin-left: 1px;
-  margin-top: 30px;
+  margin-left: 5px;
   min-width: 241px;
 }
 .why-lingush .group-6 {
   align-items: flex-end;
   display: flex;
   height: 374px;
-  margin-top: 125px;
   min-width: 241px;
 }
 .why-lingush .group-7 {
   align-items: flex-end;
   display: flex;
   height: 374px;
-  margin-left: 4px;
-  margin-top: 250px;
+  margin-left: 124px;
   min-width: 241px;
+}
+.why-lingush .header {
+  align-items: center;
+  align-self: flex-end;
+  display: flex;
+  min-width: 1190px;
+}
+.why-lingush .home {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 32px;
+  width: 58px;
+}
+.why-lingush .line-1 {
+  height: 1px;
+  margin-right: 1.47px;
+  margin-top: 4px;
+  width: 1px;
+}
+.why-lingush .line-1-1 {
+  height: 2px;
+  left: 248px;
+  position: absolute;
+  top: 31px;
+  width: 119px;
+}
+.why-lingush .line-2 {
+  height: 1px;
+  left: 507px;
+  position: absolute;
+  top: 32px;
+  width: 1px;
+}
+.why-lingush .line-3 {
+  height: 1px;
+  left: 668px;
+  position: absolute;
+  top: 32px;
+  width: 1px;
 }
 .why-lingush .line-5 {
   height: 2px;
@@ -191,11 +227,27 @@
   margin-top: 3px;
   width: 60px;
 }
+.why-lingush .log-in-i78737839 {
+  letter-spacing: 0px;
+  margin-left: 52px;
+  min-height: 27px;
+  width: 56px;
+}
 .why-lingush .logo {
   align-items: flex-start;
   display: flex;
   height: 60px;
   min-width: 194px;
+}
+.why-lingush .navigation {
+  align-items: flex-start;
+  display: flex;
+  height: 32px;
+  justify-content: flex-end;
+  left: 0px;
+  min-width: 680px;
+  position: absolute;
+  top: 0px;
 }
 .why-lingush .overlap-group {
   align-items: flex-start;
@@ -226,9 +278,20 @@
 }
 .why-lingush .overlap-group2 {
   height: 462px;
-  margin-bottom: -20px;
+  margin-bottom: -88.16px;
   position: relative;
   width: 431px;
+}
+.why-lingush .overlap-group3 {
+  height: 33px;
+  margin-left: 400px;
+  margin-top: 1px;
+  position: relative;
+}
+.why-lingush .place {
+  letter-spacing: 0px;
+  min-height: 27px;
+  width: 58px;
 }
 .why-lingush .see-more {
   letter-spacing: 0px;
@@ -253,6 +316,19 @@
   width: 241px;
 }
 .why-lingush .text-4 {
+  letter-spacing: 0px;
+  margin-left: 52px;
+  min-height: 27px;
+  width: 135px;
+  text-decoration: none;
+}
+.why-lingush .text-5 {
+  letter-spacing: 0px;
+  margin-left: 53px;
+  min-height: 27px;
+  width: 141px;
+}
+.why-lingush .text-6 {
   align-self: center;
   letter-spacing: 0px;
   margin-left: 21px;
@@ -268,6 +344,8 @@
 }
 .why-lingush .why-lingush {
   letter-spacing: 0px;
+  margin-left: 1px;
+  margin-top: 50px;
   min-height: 45px;
   min-width: 213px;
   text-align: center;
@@ -280,7 +358,7 @@
   top: 120px;
   width: 137px;
 }
-.why-lingush .x81364-art--ee-image-1 {
+.why-lingush .x81364-art-paren-ad-free-image-1 {
   height: 254px;
   left: 146px;
   object-fit: cover;
@@ -290,6 +368,7 @@
 }
 :root {
   --alabaster: rgba(250, 250, 250, 1);
+  --alabaster-2: rgba(251, 251, 251, 1);
   --baby-powder: rgba(252, 252, 252, 1);
   --black: rgba(0, 0, 0, 0.6);
   --fair-pink: rgba(255, 236, 236, 1);
