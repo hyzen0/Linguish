@@ -9,10 +9,6 @@ import seeMore from './Screens/SeeMore/seeMore';
 import login from './Screens/Login/login';
 
 ReactDOM.render(
-  // <React.StrictMode>
-  //   <App />
-  // </React.StrictMode>,
-  // document.getElementById('root')
   <BrowserRouter>
        <Switch>
         <Route exact path="/" component={App} />

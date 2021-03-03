@@ -60,7 +60,7 @@ function WhyLingush(props) {
         </div>
       </div>
       <div className="detail">
-      <Link to="/see_more"><div className="see-more poppins-normal-fair-pink-15px">{seeMore}</div></Link>
+      <div className="see-more poppins-normal-fair-pink-15px">{seeMore}</div>
           <img className="line-5" src={line5} />
             </div>
       <div className="download-app">
