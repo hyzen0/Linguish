@@ -8,7 +8,7 @@ RUN npm install
 
 COPY . .
 
-ENV REACT_APP_API_URL=http://172.31.19.21:3000
+ENV REACT_APP_API_URL=3.14.146.184:5000
 
 RUN npm run build 
 
