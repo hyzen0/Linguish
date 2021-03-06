@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import letsGetStarted1 from './Screens/LetsGetStarted/letsGetStarted1';
 import seeMore from './Screens/SeeMore/seeMore';
 import login from './Screens/Login/login';
+import register from './Screens/Login/register';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -15,6 +16,7 @@ ReactDOM.render(
         <Route path="/Lets_get_started1" component={letsGetStarted1} />
         <Route path="/see_more" component={seeMore}/>
         <Route path="/login" component={login}/>
+        <Route path="/register" component={register}/>
       </Switch>
   </BrowserRouter>,
   document.getElementById('root')

@@ -49,6 +49,11 @@ function LogIn(props) {
           <div className="forgot-password poppins-normal-black-20px">{forgotPassword}</div>
           <img className="line-4" src={line4} />
         </div></Link>
+        <Link to="/register"><div className="line-or">
+          <img className="line-3-1" src={line3} />
+          <div className="forgot-password poppins-normal-black-20px">Dont Have an Account?</div>
+          <img className="line-4" src={line4} />
+        </div></Link>
       </div>
     </div>
   );
@@ -71,8 +76,8 @@ function Header(props) {
             <img className="line-1" src={line1} />
           </div></Link>
           <Link to="/lets_get_started1"><div className="text-1 poppins-normal-chicago-18px">{text1}</div></Link>
-          <div className="text-2 poppins-normal-chicago-18px">{text2}</div>
-          <div className="text-3 poppins-semi-bold-chicago-18px">{text3}</div>
+          <a href="https://play.google.com/store/apps/details?id=com.MyDos.Lingush"><div className="text-2 poppins-normal-chicago-18px">{text2}</div></a>
+          <Link to="/login"><div className="text-3 poppins-semi-bold-chicago-18px">{text3}</div></Link>
         </div>
         <img className="line-1-1" src={line12} />
         <img className="line-2" src={line2} />

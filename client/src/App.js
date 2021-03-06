@@ -87,7 +87,7 @@ function Header(props) {
             <img className="line-1" src={line1} />
           </div></Link>
           <Link to="/lets_get_started1"><div className="text-1 poppins-normal-alabaster-18px">{text1}</div></Link>
-          <Link to="/lets_get_started1"><div className="text-2 poppins-normal-white-18px">{text2}</div></Link>
+          <a href="https://play.google.com/store/apps/details?id=com.MyDos.Lingush"><div className="text-2 poppins-normal-white-18px">{text2}</div></a>
           <Link to="/login"><div className="log-in-i78627839 poppins-normal-white-18px">{logInI78627839}</div></Link>
         </div>
         <img className="line-1-1" src={line12} />
