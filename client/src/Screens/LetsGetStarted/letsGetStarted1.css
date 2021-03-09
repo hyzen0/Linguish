@@ -116,6 +116,7 @@
   margin-top: 30px;
   min-height: 27px;
   width: 74px;
+  z-index: 2;
 }
 .why-lingush .download-app {
   align-items: center;
@@ -281,6 +282,7 @@
   margin-bottom: -88.16px;
   position: relative;
   width: 431px;
+  z-index: 1;
 }
 .why-lingush .overlap-group3 {
   height: 33px;

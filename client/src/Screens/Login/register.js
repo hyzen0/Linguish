@@ -1,6 +1,9 @@
-import React from "react";
+import React,{useState} from "react";
 import "./register.css";
-import {Link } from "react-router-dom";
+import {Link, useHistory } from "react-router-dom";
+import {useDispatch} from 'react-redux';
+import {signup} from '../../actions/auth'; 
+import axios from 'axios';
 
 function App() {
   return <Register {...registerData} />;
@@ -38,6 +41,21 @@ function Register(props) {
     logIn2,
   } = props;
 
+  const [details, setDetails] = useState({name: '', email: '', password: ''});
+
+  // const dispatch = useDispatch();
+  // const history = useHistory();
+  const onSubmitHandler=(e)=>{
+    axios.post('http://localhost:5000/api/register', details).then(
+      res => {
+        console.log(res);
+      }
+    ).catch(
+      err => {
+        console.log(err);
+      }
+    )
+  };
   return (
     <div className="register">
       <div className="overlap-group" style={{ backgroundImage: `url(${overlapGroup})` }}>
@@ -49,8 +67,8 @@ function Register(props) {
             <div className="mail">
               <img className="mail-1" src={mail1} />
               <div className="auto-flex">
-                <div><input className="full-name poppins-normal-black-15px" type="text" placeholder={fullName}/></div>
-                <div><input className="email poppins-normal-black-15px" type="text" placeholder={email}/></div>
+                <div><input className="full-name poppins-normal-black-15px" type="text" placeholder={fullName} onChange={(e) => setDetails({ ...details, name: e.target.value })}/></div>
+                <div><input className="email poppins-normal-black-15px" type="text" placeholder={email} onChange={(e) => setDetails({ ...details, email: e.target.value })}/></div>
               </div>
             </div>
             <div className="user">
@@ -61,7 +79,7 @@ function Register(props) {
           <img className="line-3-1" src={line32} />
           <div className="password">
             <img className="padlock-1" src={padlock1} />
-            <div><input className="password-1 poppins-normal-black-15px" placeholder={password} type="password"/></div>
+            <div><input className="password-1 poppins-normal-black-15px" placeholder={password} type="password" onChange={(e) => setDetails({ ...details, password: e.target.value })}/></div>
           </div>
           <img className="line-4" src={line4} />
           <div className="password-2">
@@ -69,9 +87,9 @@ function Register(props) {
             <div><input className="confirm-password poppins-normal-black-15px" type="password" placeholder={confirmPassword} /></div>
           </div>
         </div>
-        <div className="button-log-in">
+        <button className="button-log-in" onClick={onSubmitHandler}>
           <img className="log-in-1" src={logIn2} />
-        </div>
+        </button>
       </div>
     </div>
   );

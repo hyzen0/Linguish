@@ -74,7 +74,7 @@
   letter-spacing: 0px;
   margin-left: 15px;
   min-height: 22px;
-  width: 143px;
+  width: 450px;
   outline: none;
   border: 0px none;
   background-color: var(--alabaster-2);
@@ -90,7 +90,7 @@
   letter-spacing: 0px;
   margin-top: 39px;
   min-height: 22px;
-  width: 45px;
+  width: 450px;
   outline: none;
   border: 0px none;
   background-color: var(--alabaster-2);
@@ -101,7 +101,7 @@
 .register .full-name {
   letter-spacing: 0px;
   min-height: 22px;
-  width: 101px;
+  width: 450px;
   outline: none;
   border: 0px none;
   background-color: var(--alabaster-2);
@@ -276,7 +276,7 @@
   letter-spacing: 0px;
   margin-left: 15px;
   min-height: 22px;
-  width: 76px;
+  width: 450px;
   outline: none;
   border: 0px none;
   background-color: var(--alabaster-2);

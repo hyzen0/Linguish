@@ -1,6 +1,10 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "./login.css";
 import {Link } from "react-router-dom";
+import axios from 'axios';
+import dotenv from 'dotenv';
+dotenv.config();
+
 
 function login() {
   return <LogIn {...LogInData} />;
@@ -24,6 +28,19 @@ function LogIn(props) {
     headerProps,
   } = props;
 
+  const [details, setDetails] = useState({email: '', password: ''});
+
+  const onSubmitHandler=()=>{
+    axios.post(`${process.env.REACT_APP_API_URL}/login`, details).then(
+      res =>{
+        console.log(res);
+      }
+    ).catch(
+      err => {
+        console.log(err);
+      }
+    )
+  };
   return (
     <div className="log-in">
       <div className="overlap-group" style={{ backgroundImage: `url(${overlapGroup})` }}>
@@ -34,17 +51,17 @@ function LogIn(props) {
             <img className="mail-1" src={mail1} />
             <div className="email poppins-normal-black-15px"></div>
           </div>
-          <input className="log-in-box-email border-1-5px-fuchsia-pink" type="text" placeholder={email}/></div>
+          <input className="log-in-box-email border-1-5px-fuchsia-pink" type="text" placeholder={email} onChange={(e) => setDetails({ ...details, email: e.target.value })}/></div>
         {/* Password */}
         <div className="log-in-box"><div className="mail">
             <img className="padlock-1" src={padlock1} />
             <div className="email poppins-normal-black-15px"></div>
           </div>
-          <input className="log-in-box-password border-1-5px-fuchsia-pink" type="password" placeholder={password}/></div>
-          <Link to="/not-done"><div className="button-log-in">
+          <input className="log-in-box-password border-1-5px-fuchsia-pink" type="password" placeholder={password} onChange={(e) => setDetails({ ...details, password: e.target.value })} /></div>
+          <button className="button-log-in" onClick={onSubmitHandler}>
           <img className="log-in" src={logIn} />
-        </div></Link>
-        <Link to="/password_reset"><div className="line-or">
+        </button>
+        <Link to="/reset_password"><div className="line-or">
           <img className="line-3-1" src={line3} />
           <div className="forgot-password poppins-normal-black-20px">{forgotPassword}</div>
           <img className="line-4" src={line4} />

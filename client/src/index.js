@@ -8,6 +8,7 @@ import letsGetStarted1 from './Screens/LetsGetStarted/letsGetStarted1';
 import seeMore from './Screens/SeeMore/seeMore';
 import login from './Screens/Login/login';
 import register from './Screens/Login/register';
+import password_reset from './Screens/Login/password_reset';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -17,6 +18,7 @@ ReactDOM.render(
         <Route path="/see_more" component={seeMore}/>
         <Route path="/login" component={login}/>
         <Route path="/register" component={register}/>
+        <Route path="/reset_password" component={password_reset}/>
       </Switch>
   </BrowserRouter>,
   document.getElementById('root')

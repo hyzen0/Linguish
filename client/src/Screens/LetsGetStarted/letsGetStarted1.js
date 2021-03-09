@@ -60,18 +60,18 @@ function WhyLingush(props) {
         </div>
       </div>
       <div className="detail">
-      <div className="see-more poppins-normal-fair-pink-15px">{seeMore}</div>
+      <Link to="/see_more"><div className="see-more poppins-normal-fair-pink-15px">{seeMore}</div></Link>
           <img className="line-5" src={line5} />
             </div>
       <div className="download-app">
         <div className="get-it-on poppins-normal-baby-powder-20px">{getItOn}</div>
         <div className="auto-flex1">
-          <div className="butto-download-google">
+          <a href="https://play.google.com/store/apps/details?id=com.MyDos.Lingush"><div className="butto-download-google">
             <div className="overlap-group border-1-5px-black">
               <img className="google-play-1" src={googlePlay1} />
               <div className="google-play poppins-normal-black-18px">{googlePlay}</div>
             </div>
-          </div>
+          </div></a>
           <div className="butto-download-app-store">
             <div className="overlap-group1 border-1-5px-black">
               <img className="google-play-1" src={googlePlay12} />
