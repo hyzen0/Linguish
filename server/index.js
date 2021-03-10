@@ -38,6 +38,9 @@ app.use((req, res) => {
     msg: "Page not found",
   });
 });
+app.get('/', (req,res) =>{
+  res.send('Hello To Lingush API')
+});
 
 const PORT = process.env.PORT || 5000;
 

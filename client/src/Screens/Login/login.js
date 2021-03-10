@@ -1,12 +1,11 @@
 import React, {useState, useEffect} from "react";
 import "./login.css";
-import {Link } from "react-router-dom";
+import {Link, Redirect } from "react-router-dom";
 import axios from 'axios';
-import dotenv from 'dotenv';
-dotenv.config();
 
 
 function login() {
+  
   return <LogIn {...LogInData} />;
 }
 
@@ -29,18 +28,27 @@ function LogIn(props) {
   } = props;
 
   const [details, setDetails] = useState({email: '', password: ''});
+  const [loggedin, setLoggedin] = useState(false);
+  const [user,setUser] = useState({user: ''});
 
   const onSubmitHandler=()=>{
-    axios.post(`${process.env.REACT_APP_API_URL}/login`, details).then(
+    axios.post('/api/login', details).then(
       res =>{
-        console.log(res);
-      }
+        localStorage.setItem('token', res.details.token);
+        // console.log(res);
+        alert("Succesfully Loged-in");
+        setLoggedin(true);
+      },
     ).catch(
       err => {
         console.log(err);
-      }
+        alert("Invalid Credentials");
+      },
     )
   };
+  if(loggedin){
+    return  <Redirect to ={'/'}/>;
+  }
   return (
     <div className="log-in">
       <div className="overlap-group" style={{ backgroundImage: `url(${overlapGroup})` }}>

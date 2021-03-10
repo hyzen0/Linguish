@@ -52,10 +52,10 @@ function Main(props) {
           <div className="get-it-on poppins-normal-baby-powder-20px">{getItOn}</div>
           <div className="auto-flex">
             <div className="butto-download-google">
-              <div className="overlap-group1-1 border-1-5px-black">
+            <a href="https://play.google.com/store/apps/details?id=com.MyDos.Lingush"> <div className="overlap-group1-1 border-1-5px-black">
                 <img className="google-play-1" src={googlePlay1} />
                 <div className="google-play poppins-normal-black-18px">{googlePlay}</div>
-              </div>
+              </div></a>
             </div>
             <div className="butto-download-app-store">
               <div className="overlap-group2-1 border-1-5px-black">

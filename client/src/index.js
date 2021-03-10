@@ -9,7 +9,12 @@ import seeMore from './Screens/SeeMore/seeMore';
 import login from './Screens/Login/login';
 import register from './Screens/Login/register';
 import password_reset from './Screens/Login/password_reset';
+import axios from "axios";
+import dotenv from "dotenv";
+dotenv.config();
 
+
+axios.defaults.baseURL=process.env.REACT_APP_API_URL
 ReactDOM.render(
   <BrowserRouter>
        <Switch>

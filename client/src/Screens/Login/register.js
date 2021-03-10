@@ -46,7 +46,7 @@ function Register(props) {
   // const dispatch = useDispatch();
   // const history = useHistory();
   const onSubmitHandler=(e)=>{
-    axios.post('http://localhost:5000/api/register', details).then(
+    axios.post('/api/register', details).then(
       res => {
         console.log(res);
       }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./password_reset.css";
 import {Link, useHistory } from "react-router-dom";
 
@@ -21,6 +21,10 @@ export default App;
 
 function ForgetPassword(props) {
   const { overlapGroup, resetPassword, text1, mail1, email, logIn, headerProps } = props;
+  const [details,setDetails] = useState({email:''});
+  const submitHandler=() =>{
+
+  } 
 
   return (
     <div className="forget-password">
@@ -31,12 +35,12 @@ function ForgetPassword(props) {
         <div className="log-in-box border-1-5px-fuchsia-pink">
           <div className="mail">
             <img className="mail-1" src={mail1} />
-            <input className="email poppins-normal-black-15px" placeholder={email}></input>
+            <input className="email poppins-normal-black-15px" placeholder={email} onChange={(e)=>setDetails({...details, email: e.target.value})}></input>
           </div>
         </div>
-        <div className="button-log-in">
+        <button className="button-log-in" onClick={submitHandler}>
           <img className="log-in" src={logIn} />
-        </div>
+        </button>
       </div>
     </div>
   );
