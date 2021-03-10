@@ -4,7 +4,7 @@ const connectDB = require("./config/db");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
-// Config dotev...
+// Config dotev
 require("dotenv").config({
   path: "./config/config.env",
 });
@@ -16,20 +16,20 @@ connectDB();
 
 // body parser
 app.use(bodyParser.json());
-
 // Load routes
-const authRouter = require("./api/auth.route.js");
+const authRouter = require("./api/auth.route");
 
-// Dev Logging Middleware
+// Dev Logginf Middleware
 if (process.env.NODE_ENV === "development") {
-  app.use(cors());
+  app.use(
+    cors({
+      origin: process.env.CLIENT_URL,
+    })
+  );
   app.use(morgan("dev"));
 }
 
 // Use Routes
-app.use("/", res => {
-  console.log("working");
-});
 app.use("/api", authRouter);
 
 app.use((req, res) => {
@@ -37,9 +37,6 @@ app.use((req, res) => {
     success: false,
     msg: "Page not found",
   });
-});
-app.get('/', (req,res) =>{
-  res.send('Hello To Lingush API')
 });
 
 const PORT = process.env.PORT || 5000;
