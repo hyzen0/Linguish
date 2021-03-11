@@ -34,7 +34,7 @@ function LogIn(props) {
   const onSubmitHandler=()=>{
     axios.post('/api/login', details).then(
       res =>{
-        localStorage.setItem('token', res.details.token);
+        // localStorage.setItem('token', res.details.token);
         // console.log(res);
         alert("Succesfully Loged-in");
         setLoggedin(true);

@@ -41,20 +41,32 @@ function Register(props) {
     logIn2,
   } = props;
 
-  const [details, setDetails] = useState({name: '', email: '', password: ''});
-
+  const [details, setDetails] = useState({name: '', email: '', password: '', confirmPassword: ''});
+  // const [token, setToken] = useState({token: ''});
   // const dispatch = useDispatch();
   // const history = useHistory();
   const onSubmitHandler=(e)=>{
+    if(password===confirmPassword){
     axios.post('/api/register', details).then(
       res => {
-        console.log(res);
+        alert(res.data.message);
+        // setToken({...token, token: res.data.token});
       }
     ).catch(
       err => {
-        console.log(err);
+        alert(err.message);
       }
     )
+  }
+  else{
+    // throw new Error('Password does not match');
+    try {
+      throw ('Password does not match');
+  } catch(e) {
+      alert(e);
+      console.log(e);
+  }
+  }
   };
   return (
     <div className="register">
@@ -84,7 +96,7 @@ function Register(props) {
           <img className="line-4" src={line4} />
           <div className="password-2">
             <img className="padlock-1" src={padlock12} />
-            <div><input className="confirm-password poppins-normal-black-15px" type="password" placeholder={confirmPassword} /></div>
+            <div><input className="confirm-password poppins-normal-black-15px" type="password" placeholder={confirmPassword} onChange={(e) => setDetails({ ...details, confirmPassword: e.target.value })}/></div>
           </div>
         </div>
         <button className="button-log-in" onClick={onSubmitHandler}>

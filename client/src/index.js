@@ -9,6 +9,7 @@ import seeMore from './Screens/SeeMore/seeMore';
 import login from './Screens/Login/login';
 import register from './Screens/Login/register';
 import password_reset from './Screens/Login/password_reset';
+import activate from './Screens/Activation/activation';
 import axios from "axios";
 import dotenv from "dotenv";
 dotenv.config();
@@ -24,6 +25,7 @@ ReactDOM.render(
         <Route path="/login" component={login}/>
         <Route path="/register" component={register}/>
         <Route path="/reset_password" component={password_reset}/>
+        <Route path="/users/activate/" component={activate}/>
       </Switch>
   </BrowserRouter>,
   document.getElementById('root')
