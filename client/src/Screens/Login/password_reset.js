@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import "./password_reset.css";
 import {Link, useHistory } from "react-router-dom";
+import axios from "axios";
 
 function App() {
   return (
@@ -23,7 +24,15 @@ function ForgetPassword(props) {
   const { overlapGroup, resetPassword, text1, mail1, email, logIn, headerProps } = props;
   const [details,setDetails] = useState({email:''});
   const submitHandler=() =>{
-
+    axios.put('/api/forgotpassword',details).then(
+      res=>{
+        alert(res.data.message);
+      }
+    ).catch(
+      err =>{
+        alert(err.message);
+      }
+    )
   } 
 
   return (

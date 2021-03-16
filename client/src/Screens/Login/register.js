@@ -46,7 +46,18 @@ function Register(props) {
   // const dispatch = useDispatch();
   // const history = useHistory();
   const onSubmitHandler=(e)=>{
-    if(password===confirmPassword){
+    
+    if(details.password!=details.confirmPassword){
+      // throw new Error('Password does not match');
+    try {
+      throw ('Password does not match');
+  } catch(e) {
+      alert(e);
+      console.log(details);
+  }
+  }
+    
+  else{
     axios.post('/api/register', details).then(
       res => {
         alert(res.data.message);
@@ -57,15 +68,6 @@ function Register(props) {
         alert(err.message);
       }
     )
-  }
-  else{
-    // throw new Error('Password does not match');
-    try {
-      throw ('Password does not match');
-  } catch(e) {
-      alert(e);
-      console.log(e);
-  }
   }
   };
   return (
