@@ -7,11 +7,12 @@ function passwordReset () {
 };
 
 function Reset(){
-    const [details,setDetails] = useState({resetPasswordLinkl:'', newPassword:'', confirmNewPassword:''});
-    const url = window.location.href;
-    setDetails({...details,confirmNewPassword:url});
+    const [details,setDetails] = useState({resetPasswordLinkl:`${window.location.href}`, newPassword:'', confirmNewPassword:''});
+    // const url = window.location.href;
+    // setDetails({...details,resetPasswordLinkl:url});
     const handleSubmit = () =>{
-        axios.post('/api/resetpassword', details).then(
+        if(details.newPassword===details.confirmNewPassword){
+        axios.put('/api/resetpassword', details).then(
             res=>{
                 alert(res.data.message);
                 // setLoggedin(true);
@@ -19,14 +20,21 @@ function Reset(){
         )
         .catch(
             err=>{
-                alert(err.message);
+                alert(err);
             }
-        )
+        )}
+        else{
+            try{
+                throw ('Password does not match');
+            }catch(e){
+                alert(e);
+            }
+        }
     }
     return (
         <div>
-            <input placeholder="New Password" onChange={(e)=>setDetails({...details, newPassword:e.target.value})}></input>   
-            <input placeholder="Confirm New Password" onChange={(e)=>setDetails({...details, confirmNewPassword:e.target.value})}></input>   
+            <input className="button1" placeholder="New Password" onChange={(e)=>setDetails({...details, newPassword:e.target.value})}></input>   
+            <input className="button2" placeholder="Confirm New Password" onChange={(e)=>setDetails({...details, confirmNewPassword:e.target.value})}></input>   
             <button className="button" onClick={handleSubmit} >Reset</button>
         </div>
     );

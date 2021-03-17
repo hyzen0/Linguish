@@ -42,9 +42,6 @@ function Register(props) {
   } = props;
 
   const [details, setDetails] = useState({name: '', email: '', password: '', confirmPassword: ''});
-  // const [token, setToken] = useState({token: ''});
-  // const dispatch = useDispatch();
-  // const history = useHistory();
   const onSubmitHandler=(e)=>{
     
     if(details.password!=details.confirmPassword){
@@ -53,7 +50,7 @@ function Register(props) {
       throw ('Password does not match');
   } catch(e) {
       alert(e);
-      console.log(details);
+      // console.log(details);
   }
   }
     
