@@ -13,40 +13,77 @@ function header() {
 export default header;
 
 function Header(props) {
-    const { vector, text4, place, line1, text1, text2, text3, line12, line2, line3 } = props;
+    const {logOut,menu1,analytics,subscriptions,classes,teachers,students,quizzes,goals2,line3,logo3Props, } = props;
   
     return (
-      <div className="header">
-        <div className="logo">
-          <img className="vector" src={vector} />
-          <h1 className="text-4 poppins-normal-chicago-24px">{text4}</h1>
+      <div className="col">
+        <div className="row">
+          <Logo3 vector={logo3Props.vector} lingush={logo3Props.lingush} />
+          <div className="logout poppins-bold-white-24px">{logOut}</div>
+          {/* <img className="menu-1" src={menu1} /> */}
         </div>
-        <div className="overlap-group1">
-          <div className="navigation">
-          <Link to="/"><div className="home">
-              <div className="place poppins-normal-chicago-18px">{place}</div>
-              <img className="line-1" src={line1} />
-            </div></Link>
-            <Link to="/lets_get_started1"><div className="text-1 poppins-normal-chicago-18px">{text1}</div></Link>
-            <a href="https://play.google.com/store/apps/details?id=com.MyDos.Lingush"><div className="text-2 poppins-normal-chicago-18px">{text2}</div></a>
-            <Link to="/login"><div className="text-3 poppins-semi-bold-chicago-18px">{text3}</div></Link>
+        <div className="navbar">
+          <div className="analytics poppins-normal-white-24px">{analytics}</div>
+          <div className="subscriptions poppins-normal-white-24px">{subscriptions}</div>
+          <div className="classes poppins-normal-white-24px">{classes}</div>
+          <div className="teachers poppins-normal-white-24px">{teachers}</div>
+          <div className="students poppins-normal-white-24px">{students}</div>
+          <div className="quizzes poppins-normal-white-24px">{quizzes}</div>
+            <div className="goals poppins-semi-bold-white-24px">{goals2}</div>
+            <img className="line" src={line3} />
           </div>
-          <img className="line-1-1" src={line12} />
-          <img className="line-2" src={line2} />
-          <img className="line-3" src={line3} />
-        </div>
       </div>
     );
   }
+  function Logo3(props) {
+    const { vector, lingush } = props;
+  
+    return (
+      <div className="logo">
+        <img className="vector" src={vector} />
+        <h1 className="title poppins-normal-white-24px">{lingush}</h1>
+      </div>
+    );
+  }
+  const logo3Data = {
+    vector: "https://anima-uploads.s3.amazonaws.com/projects/603e32473d832b6567888c87/releases/603e326b3d832b6567888c89/img/vector-5@2x.svg",
+    lingush: "Lingush",
+};
   const headerData = {
-      vector: "https://anima-uploads.s3.amazonaws.com/projects/603e32473d832b6567888c87/releases/603e326b3d832b6567888c89/img/vector-3@2x.svg",
-      text4: "Lingush",
-      place: "Home",
-      line1: "https://anima-uploads.s3.amazonaws.com/projects/603e32473d832b6567888c87/releases/603e326b3d832b6567888c89/img/line-1-5@2x.svg",
-      text1: "Why Lingush?",
-      text2: "Download App",
-      text3: "Log in",
-      line12: "https://anima-uploads.s3.amazonaws.com/projects/603e32473d832b6567888c87/releases/603e326b3d832b6567888c89/img/line-1@2x.png",
-      line2: "https://anima-uploads.s3.amazonaws.com/projects/603e32473d832b6567888c87/releases/603e326b3d832b6567888c89/img/line-1@2x.png",
-      line3: "https://anima-uploads.s3.amazonaws.com/projects/603e32473d832b6567888c87/releases/603e326b3d832b6567888c89/img/line-3-3@2x.svg",
-  };
+    goals: "https://anima-uploads.s3.amazonaws.com/projects/603e32473d832b6567888c87/releases/603e326b3d832b6567888c89/img/school-analytics@1x.svg",
+    logOut: "Log out",
+    menu1: "https://anima-uploads.s3.amazonaws.com/projects/603e32473d832b6567888c87/releases/603e326b3d832b6567888c89/img/menu-1@2x.svg",
+    analytics: "Analytics",
+    subscriptions: "Subscriptions",
+    classes: "Classes",
+    teachers: "Teachers",
+    students: "Students",
+    quizzes: "Quizzes",
+    goals2: "Goals",
+    line3: "https://anima-uploads.s3.amazonaws.com/projects/603e32473d832b6567888c87/releases/60521cb59f2f282eeaecb557/img/line-3@2x.svg",
+    selectClass: "Select Class",
+    selectStudent: "Select Student",
+    x1A: "1-A",
+    vector: "https://anima-uploads.s3.amazonaws.com/projects/603e32473d832b6567888c87/releases/60521cb59f2f282eeaecb557/img/vector-3@2x.svg",
+    all: "All",
+    vector2: "https://anima-uploads.s3.amazonaws.com/projects/603e32473d832b6567888c87/releases/60521cb59f2f282eeaecb557/img/vector-3@2x.svg",
+    type: "Type",
+    topic: "Topic",
+    level: "Level",
+    egNumbers: "Eg. Numbers",
+    egBeginner: "Eg. Beginner",
+    setGoal: "https://anima-uploads.s3.amazonaws.com/projects/603e32473d832b6567888c87/releases/60521cb59f2f282eeaecb557/img/set-goal@2x.svg",
+    vector22: "https://anima-uploads.s3.amazonaws.com/projects/603e32473d832b6567888c87/releases/603e326b3d832b6567888c89/img/vector-2@2x.svg",
+    overlapGroup5: "https://anima-uploads.s3.amazonaws.com/projects/603e32473d832b6567888c87/releases/60521cb59f2f282eeaecb557/img/rectangle-14@2x.svg",
+    colors: "Colors",
+    overlapGroup6: "https://anima-uploads.s3.amazonaws.com/projects/603e32473d832b6567888c87/releases/60521cb59f2f282eeaecb557/img/rectangle-14@2x.svg",
+    colors2: "Colors",
+    overlapGroup7: "https://anima-uploads.s3.amazonaws.com/projects/603e32473d832b6567888c87/releases/60521cb59f2f282eeaecb557/img/rectangle-14@2x.svg",
+    colors3: "Colors",
+    overlapGroup8: "https://anima-uploads.s3.amazonaws.com/projects/603e32473d832b6567888c87/releases/60521cb59f2f282eeaecb557/img/rectangle-14@2x.svg",
+    colors4: "Colors",
+    vector1: "https://anima-uploads.s3.amazonaws.com/projects/603e32473d832b6567888c87/releases/603e326b3d832b6567888c89/img/vector-1-1@2x.svg",
+    logo3Props: logo3Data,};
+    
+
+

@@ -11,6 +11,7 @@ import register from './Screens/Login/register';
 import password_reset from './Screens/Login/password_reset';
 import activate from './Screens/Activation/activation';
 import resetPassword from './Screens/PasswordReset/passwordReset';
+import goals from './Screens/User/Goals/goals';
 import axios from "axios";
 import dotenv from "dotenv";
 dotenv.config();
@@ -28,6 +29,7 @@ ReactDOM.render(
         <Route path="/reset_password" component={password_reset}/>
         <Route path="/users/activate/" component={activate}/>
         <Route path="/users/password/reset/" component={resetPassword}/>
+        <Route path="/user/goals" component={goals}/>
       </Switch>
   </BrowserRouter>,
   document.getElementById('root')
